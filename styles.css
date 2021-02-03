@@ -1,0 +1,165 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 20px 100px;
+    font-family: 'Montserrat', sans-serif;
+    color: #333333;
+}
+img{
+    max-width: 100%;
+}
+.introduction{
+    display: grid;
+    grid-template-columns: 10px 1fr;
+}
+span{
+    color: #333333;
+    font-weight: bold;
+    font-size: 10px;
+}
+.fa{
+    margin-right: 20px;
+    font-size: 1.5em;
+}
+.introduction p{
+    max-width: 850px;
+}
+.timing{
+    display: flex;
+}
+.cross{
+    color: #f2994a;
+    font-weight: bold;
+}
+.dot{
+    width: 1.8em;
+    position: relative;
+    margin-right: 20px;
+    top: 5px;
+}
+h1{
+    font-family: Playfair Display;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 64px;
+}
+label{
+font-size: 16px;
+line-height: 25px;
+}
+.about{
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 17px;
+    color: #4f4f4f;
+}
+.type{
+    font-family: Playfair Display;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
+section h3{
+    font-family: Playfair Display;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+ol{
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    list-style: none;
+    counter-reset: li;
+}
+li::before{
+    content: counter(li);
+    color: #fff;
+    display: inline-block;
+    width: 1em;
+    background-color: #f2994a;
+    margin-left: -1em;
+    padding: 4px;
+    text-align: center;
+    border-radius: 4px;
+    font-size: 16px;
+    font-family: Playfair Display;
+}
+li{
+    counter-increment: li;
+}
+li{
+    margin-top: 20px;
+}
+section div p{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 12px;
+    color: #BDBDBD;
+    text-transform: uppercase;
+}
+blockquote{
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    color: #BDBDBD;
+}
+footer p{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #a9a9a9;
+    text-align: center;
+}
+section{
+    padding: 20px;
+}
+input[type = "checkbox"]{
+    font-size: 2em;
+}
+h1{
+    font-size: 40px;
+    min-width: 500px;
+}
+@media only screen and (max-width: 768px){
+    .duration{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, auto);
+    grid-gap: 20px;
+    position: none;
+    border: none;
+}
+}
+@media only screen and (min-width:769px){
+    .duration{
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 20px 0px #000;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 30px;
+    width: 220px;
+    height: 370px;
+    border-radius: 12px;
+    position: absolute;
+    right: 70px;
+    margin-top: 30px;
+}
+h1{
+    min-width: 800px;
+}
+}
+
+
+
+
+
+
+
