@@ -4,9 +4,10 @@
     box-sizing: border-box;
 }
 body{
-    margin: 20px 100px;
+    margin: 20px 30px;
     font-family: 'Montserrat', sans-serif;
     color: #333333;
+    width: 100%;
 }
 img{
     max-width: 100%;
@@ -37,7 +38,7 @@ span{
 .dot{
     width: 1.8em;
     position: relative;
-    margin-right: 20px;
+    right: 5px;
     top: 5px;
 }
 h1{
@@ -124,7 +125,7 @@ input[type = "checkbox"]{
     font-size: 2em;
 }
 h1{
-    font-size: 40px;
+    font-size: 30px;
     min-width: 500px;
 }
 @media only screen and (max-width: 768px){
@@ -133,9 +134,11 @@ h1{
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, auto);
     grid-gap: 20px;
-    position: none;
     border: none;
 }
+    .line1{
+    grid-column: 1 / span 4;
+    }
 }
 @media only screen and (min-width:769px){
     .duration{
@@ -149,7 +152,7 @@ h1{
     height: 370px;
     border-radius: 12px;
     position: absolute;
-    right: 70px;
+    right: 30px;
     margin-top: 30px;
 }
 h1{
